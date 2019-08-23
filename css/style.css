@@ -1,0 +1,141 @@
+.bg-coffee1 {
+	background-color: #2f1700 !important;
+}
+.bg-coffee2 {
+	background-color: #f1cfa5 !important;
+}
+.bg-coffee3 {
+	background-color: #411f00 !important;
+}
+
+/* Bootstrap 自訂樣式 */
+.btn-coffee {
+	color: #fff;
+	background-color: #5a2d03;
+	border-color: #f1cfa5;
+}
+
+.btn-coffee:hover {
+	color: #fff;
+	background-color: #2f1700;
+	border-color: #f1cfa5;
+}
+
+.btn-coffee:focus,
+.btn-coffee.focus {
+	box-shadow: 0 0 0 0.2rem rgba(90, 45, 3, 0.5);
+}
+
+.btn-coffee.disabled,
+.btn-coffee:disabled {
+	color: #fff;
+	background-color: #aa8460;
+	border-color: #aa8460;
+}
+
+.btn-coffee:not(:disabled):not(.disabled):active,
+.btn-coffee:not(:disabled):not(.disabled).active,
+.show > .btn-coffee.dropdown-toggle {
+	color: #fff;
+	background-color: #aa8460;
+	border-color: #aa8460;
+}
+
+.btn-coffee:not(:disabled):not(.disabled):active:focus,
+.btn-coffee:not(:disabled):not(.disabled).active:focus,
+.show > .btn-coffee.dropdown-toggle:focus {
+	box-shadow: 0 0 0 0.2rem rgba(170, 132, 96, 0.5);
+}
+
+#scrollspy .nav-item a {
+	color: #2f1700 !important;
+}
+
+#scrollspy .nav-link.active {
+	background: #2f1700;
+	color: white !important;
+}
+
+/* 選單底線效果 */
+ul.menu-left {
+    -webkit-transition: all 0.3s ease-out;
+    -moz-transition: all 0.3s ease-out;
+    -ms-transition: all 0.3s ease-out;
+    -o-transition: all 0.3s ease-out;
+    transition: all 0.3s ease-out;
+}
+.menu-left a {
+    display: inline-block;
+    position: relative;
+    transition: color 0.35s ease;
+    /* 底線間距 */
+    padding-bottom: 0.5rem;
+}
+.menu-left a:before {
+    content: '';
+    display: block;
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    transition: width 0s ease, background 0.35s ease;
+}
+.menu-left a:after {
+    content: '';
+    display: block;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    height: 1px;
+    width: 0;
+    background: #fff;
+    transition: width 0.35s ease;
+}
+.menu-left a:hover:before {
+    width: 100%;
+    background: #fff;
+    transition: width 0.35s ease;
+}
+.menu-left a:hover:after {
+    width: 100%;
+    background: transparent;
+    transition: all 0s ease;
+}
+
+/* 斷點區 ----------------------------------- */
+/* xs */
+@media (max-width: 575px) {
+}
+
+/* sm */
+@media (min-width: 576px) {
+}
+
+/* md */
+@media (min-width: 768px) {
+}
+
+@media (min-width: 992px) {
+	.vh-lg-100 {
+		height: 100vh !important;
+	}
+}
+
+@media (min-width: 1200px) {
+}
+
+/* js plug-in 程式區 */
+/* scrollpage */
+header {
+	will-change: transform;
+	transition: background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+	transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s;
+	transition: transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1), background 0.3s, -webkit-transform 0.5s cubic-bezier(0.694, 0.048, 0.335, 1);
+	transform: translateY(0);
+	-webkit-transform: translateY(0);
+}
+.hide-nav {
+	transform: translateY(-120% !important);
+	-webkit-transform: translateY(-120%) !important;
+}

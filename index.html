@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="zh-tw">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <!-- Animate CSS -->
+    <link rel="stylesheet" href="css/animate.css">
+    <!-- My Style CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>泰山咖啡莊園</title>
+</head>
+
+<body>
+    <!-- 導覽列高 -->
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark bg-coffee1 fixed-top">
+        <a class="navbar-brand" href="#section01"><img src="img/logo.png" alt="泰山咖啡莊園" width="40"></a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto menu-left">
+                <li class="nav-item">
+                    <a class="nav-link" href="#section01"><i class="fas fa-home mr-1"></i>回首頁</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section02"><i class="fas fa-hamburger mr-1"></i>各式餐飲</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section03"><i class="fas fa-bus mr-1"></i>泰山景點</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section04"><i class="fas fa-map-marked-alt mr-1"></i>莊園位置</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section05"><i class="fas fa-envelope mr-1"></i>聯絡我們</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#section06" data-toggle="modal" data-target="#myModal"><i
+                            class="fas fa-coffee mr-1"></i>咖啡的故事</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="請輸入關鍵字">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+            </form>
+        </div>
+    </header>
+    <!-- 輪播圖區 section01 -->
+    <section id="section01" class="vh-lg-100">
+        <div id="carouselExampleIndicators" class="carousel slide vh-lg-100" data-ride="carousel" data-interval="3000">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="img/carousel_01.jpg" class="d-block w-100" alt="輪播圖01">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel_02.jpg" class="d-block w-100" alt="輪播圖02">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel_03.jpg" class="d-block w-100" alt="輪播圖03">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel_04.jpg" class="d-block w-100" alt="輪播圖04">
+                </div>
+                <div class="carousel-item">
+                    <img src="img/carousel_05.jpg" class="d-block w-100" alt="輪播圖05">
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+    <!-- 各式餐飲 section02 -->
+    <section id="section02" class="vh-lg-100 bg-coffee1">
+        <div class="container h-100 d-lg-flex flex-column justify-content-lg-center">
+            <h1 class="text-center text-white pt-3 pb-lg-4">各式餐飲</h1>
+            <div class="row">
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <img src="img/section02_01.jpg" class="card-img-top" alt="各式餐飲01">
+                        <div class="card-body">
+                            <h5 class="card-title">咖啡飲品</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <div class="card-footer text-muted">
+                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <img src="img/section02_02.jpg" class="card-img-top" alt="各式餐飲01">
+                        <div class="card-body">
+                            <h5 class="card-title">蛋糕點心</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <div class="card-footer text-muted">
+                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 my-3">
+                    <div class="card">
+                        <img src="img/section02_03.jpg" class="card-img-top" alt="各式餐飲01">
+                        <div class="card-body">
+                            <h5 class="card-title">義大利麵</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of
+                                the card's content.</p>
+                            <div class="card-footer text-muted">
+                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <!-- 泰山景點 section03 -->
+    <section id="section03" class="vh-lg-100 bg-coffee2 p-3">
+        <div class="container">
+            <h1 class="text-center text-dark p-lg-4">泰山景點</h1>
+            <ul class="list-unstyled">
+                <li class="media bg-white rounded p-2 shadow">
+                    <img src="img/view01_s.jpg" class="mr-3" alt="頂泰山巖">
+                    <div class="media-body">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item mt-0 mb-1 h4">頂泰山巖</li>
+                        </ol>
+                        <p>
+                            頂泰山巖建於清乾隆十九年（1754年），由仕紳李序彥、李序原等所捐建，
+                            自福建省泉州府安溪縣彭內莊分香泰山顯應祖師神像來臺，原名「福山巖」，頂泰山巖坐西北朝東南，通寬九開間兩進兩廊兩護龍。前殿採石雕牆堵，蟠龍柱牆面石雕皆昭和期的臺灣建築風格。前殿為重檐硬山式，兩側山門則為重檐歇山形式，
+                            使宛若三座並排之廟宇。因位於崎仔腳山腰上，故又名「崎仔腳廟」，後該廟又分靈出另一座位於山下明志路上的泰山巖，為分別兩座「泰山巖」，故頂泰山巖又稱為「崎仔腳老祖廟」、「頂廟」。
+                        </p>
+                    </div>
+                </li>
+                <li class="media bg-white rounded my-4 p-2 shadow">
+                    <div class="media-body">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item mt-0 mb-1 h4">明志書院</li>
+                        </ol>
+                        <p>
+                            明志書院，為臺灣北部的書院，文風冠於北臺，號稱「北臺首學」。原為一所書院，1761年（清乾隆26年），來自福建汀州的貢生胡焯猷，捐設土地設於興直堡新莊的「山腳」，亦即今日新北市泰山區。隨著1781年淡水廳廳治在竹塹（今日臺灣新竹市），官紳們將明志書院遷建於竹塹，故分兩時期為「泰山明志書院」與「竹塹明志書院」（新竹明志書院）。竹塹明志書院原址[1]位於新竹關帝廟之西內天后宮以南（今日西大路與西門街交會點處），已在日治時期拆毀。
+                            胡焯猷的義舉，造就臺灣大甲溪以北第一個書院的誕生，尤其在公家的淡水廳儒學遲至半個世紀（五十四年後，嘉慶二十二年，1817年）後才設立的情況下，明志書院更是發揮了「民間教育」的宗旨。
+                        </p>
+                    </div>
+                    <img src="img/view02_s.jpg" class="mr-3" alt="明志書院">
+                </li>
+                <li class="media bg-white rounded p-2 shadow">
+                    <img src="img/view03_s.jpg" class="mr-3" alt="辭修公園">
+                    <div class="media-body">
+                        <ol class="breadcrumb">
+                            <li class="breadcrumb-item mt-0 mb-1 h4">辭修公園</li>
+                        </ol>
+                        <p>
+                            辭修公園，前名「陳誠紀念公園」，位於臺灣新北市泰山區同榮里尖凍山丘陵，佔地5.5公頃，原為中華民國故副總統陳誠與夫人譚祥的合葬墓園，1995年陳家後人將遺骨遷葬至高雄縣大樹鄉（今高雄市大樹區）佛光山萬壽園納骨塔[1]，該園交由泰山鄉公所管理，墓園經過改建更名為辭修公園。辭修公園整座公園設立在面向臺北盆地的山坡上，是林口臺地陡降丘陵的一部份[4]，由入口處向公園內部仰望，兩百多階的中央石階通往中央雕像平臺。平臺面向臺北盆地，視野廣闊，並立有紀念石碑，記述陳誠生平事蹟及蔣中正褒揚石碑[1]。
+                        </p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+    <!-- 莊園位置 section04 -->
+    <section id="section04" class="vh-lg-100 bg-coffee1 pb-4">
+        <div class="container d-lg-flex flex-lg-column justify-content-lg-center">
+            <h1 class="text-center text-white py-4">莊園位置</h1>
+            <div class="embed-responsive embed-responsive-16by9">
+                <iframe class="embed-responsive-item"
+                    src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14458.832826336615!2d121.4193406!3d25.0439747!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xa639904a89f26435!2z5Yue5YuV6YOo5Yue5YuV5Yqb55m85bGV572y5YyX5Z-65a6c6Iqx6YeR6aas5YiG572y5rOw5bGx6IG35qWt6KiT57e05aC0!5e0!3m2!1szh-TW!2stw!4v1566450655433!5m2!1szh-TW!2stw"
+                    width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+            </div>
+        </div>
+    </section>
+    <!-- 聯絡我們 section05 -->
+    <section id="section05" class="vh-lg-100 bg-coffee2">
+        <div class="container">
+            <h1 class="text-center text-dark py-4">聯絡我們</h1>
+            <form class="needs-validation" novalidate>
+                <table class="table table-light table-hover table-striped">
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="exampleInputEmail1">姓名</label>
+                                <input id="name" type="text" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入姓名
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="telephone">電話號碼</label>
+                                <input id="tel" type="tel" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入電話號碼
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="email">電子郵件</label>
+                                <input id="email" type="email" class="form-control" required>
+                                <div class="invalid-feedback">
+                                    請輸入電子郵件
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="form-group">
+                                <label for="message">留言訊息</label>
+                                <textarea id="message" type="email" rows="3" class="form-control"></textarea>
+                                <div class="invalid-feedback">
+                                    請輸入留言訊息
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-center">
+                            <button type="submit" class="btn btn-coffee" title="送出" data-toggle="tooltip">送出</button>
+                            <button type="reset" class="btn btn-coffee" title="重設" data-toggle="tooltip">重設</button>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+    </section>
+    <!-- 咖啡故事 Modal -->
+    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="aboutCoffee">咖啡故事</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <ul id="scrollspy" class="col-12 row justify-content-around nav nav-pills my-2">
+                            <li class="nav-item">
+                                <a class="nav-link active disabled" href="#coffee1">咖啡起源</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#coffee2">咖啡好處</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#coffee3">咖啡壞處</a>
+                            </li>
+                        </ul>
+                        <ul class="col-12 list-unstyled row justify-content-lg-center overflow-auto" data-spy="scroll" data-target="#scrollspy" style="height:300px;">
+                            <li id="coffee1" class="col-lg-10">
+                                <h2>咖啡起源</h2>
+                                <p>
+                                    咖啡的來源已無從稽考，有諸多傳說。相傳，今天的奧羅莫人的祖先被認為是首個認識到咖啡樹令人振奮的效果，雖然沒有直接的證據指出非洲咖啡的增長或是本地人會用它作為興奮劑，甚至早於17世紀已經知道；另一傳說，據說是一千多年以前，在9世紀的衣索比亞西南部的高原地區，一位牧羊人發現他的羊吃了一種植物的種子(咖啡豆)後，變得非常興奮活潑，繼而發現咖啡，但此事截至1671年並沒有得到記載，有可能是杜撰的；也有說法是當地發生過一場野火，燒焦了一片咖啡林，經過燒烤咖啡的香味引起周圍居民注意，人們最初咀嚼這種植物果實來提神，後來烘烤磨碎摻入麵粉做成麵包，作為勇士的食物，提高作戰的勇氣。不過這些傳說故事都缺乏歷史文件佐證，只出現於後世的旅遊傳記中。據說，最初經栽培的咖啡是源自衣索比亞的哈勒爾。
+                                </p>
+                                <p>
+                                    直到11世紀左右，人們才開始用水煮咖啡做為飲料。13世紀時，衣索比亞軍隊入侵葉門，將咖啡帶到了阿拉伯世界。因為伊斯蘭教的清規禁止教徒飲酒，有的宗教界人士認為這種飲料刺激神經，違反教義，曾一度禁止並關閉咖啡店，但埃及蘇丹認為咖啡不違反教義，因而解禁，咖啡飲料迅速在阿拉伯地區流行開來。咖啡Coffee這個詞，就是來源於阿拉伯語Qahwa，意思是「植物飲料」，後來傳到土耳其，成為歐洲語言中這個詞的來源。咖啡種植，製作的方法也被阿拉伯人不斷地改進而逐漸完善。
+                                </p>
+                                <p>
+                                    但在西元15世紀以前，咖啡長期被阿拉伯世界所壟斷，僅在回教國家間流傳；當時主要被使用在醫學和宗教上，回教醫生和僧侶們承認咖啡具有提神、醒腦、健胃、強身、止血等功效；15世紀初開始有文獻記載咖啡的使用方式，並且在此時期融入宗教儀式中，同時也出現在民間做為日常飲品。因回教世界嚴禁飲酒，因此咖啡成為當時很重要的社交飲品。直到16、17世紀，透過威尼斯商人和海上霸權荷蘭人的買賣輾轉將咖啡傳入歐洲，很快地，這種充滿東方神秘色彩、口感馥郁香氣迷魅的黑色飲料受到貴族仕紳階級的爭相競逐，咖啡的身價也跟著水漲船高，甚至產生了「黑色金子」的稱號，當時的貴族流行在特殊日子互送咖啡豆以示盡情狂歡，或是給久未謀面的親友，有財入袋、祝賀順遂之意，同時也是身分地位象徵。而「黑色金子」在接下來風起雲湧的大航海時代，藉由海運的傳播，全世界都被納入了咖啡的生產和消費版圖中。
+                                </p>
+                            </li>
+                            <li id="coffee2" class="col-lg-10">
+                                <h2>咖啡好處</h2>
+                                <p>
+                                    根據美國俄亥俄州立大學1994年的研究，咖啡因的確能提高清醒度， 能提高細胞內環磷腺?的含量，小劑量能興奮大腦皮層，
+                                    振奮精神，改善思維，消除疲勞，加快反應，提昇工作效率。 大劑量則可興奮延腦呼吸中樞和血管運動中樞， 增加呼吸頻率，造成過度刺激，
+                                    產生焦慮、興奮、頭痛、失眠、心神不寧。 一般而言，每天 喝100-300毫克 的咖啡因，就足以提神，且對身體無害。 又根據 [
+                                    美國國家糖尿病消化性腎臟研究院 ] 的研究指出， 咖啡因 與 降低罹患肝臟疾病的風險有相關， 也就是說一天喝1~2杯，肝臟保護功效。
+                                    咖啡因能促進胃酸的分泌，增進食欲， 加速食物的消化和吸收。咖啡還 刺激排便的作用。 咖啡因 的刺激會促進肌肉活動力，
+                                    但是刺激過多會導致抽筋、肌肉顫抖等。 咖啡因還可以抑制哮喘, 有支氣管藥物的功效， 常 喝咖啡者 較少氣喘。 咖啡含有與紅茶相似的氧化物chlorogenic
+                                    acid（綠原酸）能很容易地被人體吸收， 具有保護腸道及預防直腸癌的作用。
+                                </p>
+                            </li>
+                            <li id="coffee3" class="col-lg-10">
+                                <h2>咖啡壞處</h2>
+                                <p>
+                                    成長中的青少年 對咖啡因的興奮作用較敏感， 比較會有心悸..影響睡眠的情形。 咖啡因對有高血壓及心血管疾病的人有強心作用，
+                                    但同時也會使心跳加快，血壓增高， 亦容易引起心肌缺氧，對病情的控制不利。 懷孕的婦女過量的咖啡 會增加流產 及 胎兒發育遲緩的機會。 停經後的
+                                    婦女與老年人 過多的咖啡因會導致 鈣質的流失..骨質疏鬆症的機會。 咖啡因會刺激胃酸的分泌，胃潰瘍的患者可能惡化消化性潰瘍的病程。
+                                    空腹時不要喝咖啡，以免胃酸過多。 喝咖啡確實可能增加膽固醇，對心臟血管疾病的人非常不利。 咖啡中含有松烯（terpene芳香性碳水化合物）
+                                    這種油性的物質，對於心血管的影響因人而異， 但是通常它會造成血膽固醇上昇，不可不察。 這種物質的多寡 與 煮咖啡的方式有關： 如果是以高壓蒸氣 或
+                                    懸滴式咖啡機來煮時， 因為熱水與咖啡豆 接觸的時間短， 所以 terpene 被萃取出來的量少。 如果是以浸泡為主的煮法（如日本的塞風式咖啡機），
+                                    熱水咖啡豆接觸時間長，則容易萃取出大量的 terpene。 因此，對於高膽固醇的人而言，建議少喝咖啡。 如要喝 要慎選煮法，並加上 濾紙 來過濾，對於
+                                    心血管比較健康。
+                                </p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-block btn-coffee" data-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="js/jquery-3.4.1.min.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <!-- scrollpage -->
+    <script src="js/jquery.easing.min.js"></script>
+    <script src="js/scrollpage.js"></script>
+    <script>
+        // tooltip 啟動需要的程式碼
+        $('[data-toggle="tooltip"]').tooltip();
+
+        // Bootstrap驗證表單
+        (function () {
+            'use strict';
+            window.addEventListener('load', function () {
+                // Fetch all the forms we want to apply custom Bootstrap validation styles to
+                var forms = document.getElementsByClassName('needs-validation');
+                // Loop over them and prevent submission
+                var validation = Array.prototype.filter.call(forms, function (form) {
+                    form.addEventListener('submit', function (event) {
+                        if (form.checkValidity() === false) {
+                            event.preventDefault();
+                            event.stopPropagation();
+                        }
+                        form.classList.add('was-validated');
+                    }, false);
+                });
+            }, false);
+        })();
+    </script>
+</body>
+
+</html>

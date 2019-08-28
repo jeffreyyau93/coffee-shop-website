@@ -10,7 +10,8 @@
     <!-- Font Awesome CSS -->
     <link rel="stylesheet" href="css/fontawesome.css">
     <!-- Google Fonts -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100&display=swap&subset=chinese-traditional">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css?family=Noto+Sans+TC:100&display=swap&subset=chinese-traditional">
     <!-- magnific-popup CSS -->
     <link rel="stylesheet" href="css/magnific-popup.css">
     <link rel="stylesheet" href="css/magnific-popup-single.css">
@@ -21,9 +22,9 @@
     <title>泰山咖啡莊園</title>
 </head>
 
-<body>
+<body data-spy="scroll" data-target="#navbarSupportedContent" data-offset="700">
     <!-- 導覽列高 -->
-    <header class="navbar navbar-expand-lg navbar-dark bg-dark bg-coffee1 fixed-top">
+    <header class="navbar navbar-expand-lg navbar-dark bg-coffee1 fixed-top">
         <a class="navbar-brand" href="#section01"><img src="img/logo.png" alt="泰山咖啡莊園" width="40"></a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
             <span class="navbar-toggler-icon"></span>
@@ -32,7 +33,7 @@
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav mr-auto menu-left">
                 <li class="nav-item">
-                    <a class="nav-link" href="#section01"><i class="fas fa-home mr-1"></i>回首頁</a>
+                    <a class="nav-link active" href="#section01"><i class="fas fa-home mr-1"></i>回首頁</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#section02"><i class="fas fa-hamburger mr-1"></i>各式餐飲</a>
@@ -53,12 +54,12 @@
             </ul>
             <form class="form-inline my-2 my-lg-0">
                 <input class="form-control mr-sm-2" type="search" placeholder="請輸入關鍵字">
-                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">搜尋</button>
+                <button class="btn btn-outline-light my-2 my-sm-0" type="submit">搜尋</button>
             </form>
         </div>
     </header>
     <!-- 輪播圖區 section01 -->
-    <section id="section01" class="vh-lg-100">
+    <section id="section01" class="vh-lg-100 mt-5 mt-lg-0">
         <div id="carouselExampleIndicators" class="carousel slide vh-lg-100" data-ride="carousel" data-interval="3000">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -67,7 +68,7 @@
                 <li data-target="#carouselExampleIndicators" data-slide-to="3"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="4"></li>
             </ol>
-            <div class="carousel-inner">
+            <div class="carousel-inner vh-lg-100">
                 <div class="carousel-item active">
                     <img src="img/carousel_01.jpg" class="d-block w-100" alt="輪播圖01">
                 </div>
@@ -84,19 +85,19 @@
                     <img src="img/carousel_05.jpg" class="d-block w-100" alt="輪播圖05">
                 </div>
             </div>
-            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
-                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" data-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
                 <span class="sr-only">Previous</span>
             </a>
-            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
-                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" data-slide="next">
+                <span class="carousel-control-next-icon"></span>
                 <span class="sr-only">Next</span>
             </a>
         </div>
     </section>
     <!-- 各式餐飲 section02 -->
     <section id="section02" class="vh-lg-100 bg-coffee1">
-        <div class="container h-100 d-lg-flex flex-column justify-content-lg-center">
+        <div class="container h-100 d-lg-flex flex-lg-column justify-content-lg-center">
             <h1 class="text-center text-white pt-3 pb-lg-4">各式餐飲</h1>
             <div class="row">
                 <div class="col-lg-4 my-3">
@@ -104,59 +105,61 @@
                         <img src="img/section02_01.jpg" class="card-img-top" alt="各式餐飲01">
                         <div class="card-body">
                             <h5 class="card-title">咖啡飲品</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer text-muted">
-                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
-                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-coffee text-white btn-block">我要點餐</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 my-3">
                     <div class="card">
-                        <img src="img/section02_02.jpg" class="card-img-top" alt="各式餐飲01">
+                        <img src="img/section02_02.jpg" class="card-img-top" alt="各式餐飲02">
                         <div class="card-body">
                             <h5 class="card-title">蛋糕點心</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer text-muted">
-                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
-                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-coffee text-white btn-block">我要點餐</a>
                         </div>
                     </div>
                 </div>
                 <div class="col-lg-4 my-3">
                     <div class="card">
-                        <img src="img/section02_03.jpg" class="card-img-top" alt="各式餐飲01">
+                        <img src="img/section02_03.jpg" class="card-img-top" alt="各式餐飲03">
                         <div class="card-body">
                             <h5 class="card-title">義大利麵</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
-                                of
-                                the card's content.</p>
-                            <div class="card-footer text-muted">
-                                <a href="#" class="btn btn-coffee btn-block">我要點餐</a>
-                            </div>
+                            <p class="card-text">
+                                Some quick example text to build on the card title and make up the bulk of the card's
+                                content.
+                            </p>
+                        </div>
+                        <div class="card-footer text-muted">
+                            <a href="#" class="btn btn-coffee text-white btn-block">我要點餐</a>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
     </section>
     <!-- 泰山景點 section03 -->
-    <section id="section03" class="vh-lg-100 bg-coffee2 p-3">
+    <section id="section03" class="bg-coffee2 p-3">
         <div class="container">
             <h1 class="text-center text-dark p-lg-4">泰山景點</h1>
             <ul class="list-unstyled">
                 <li class="media bg-white rounded p-2 shadow">
                     <a href="img/view01.jpg" class="image-popup-no-margins">
-                        <img src="img/view01_s.jpg" class="mr-3" alt="頂泰山巖">
+                        <img src="img/view01_s.jpg" class="mr-3 w-75" alt="頂泰山巖">
                     </a>
                     <div class="media-body">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item mt-0 mb-1 h4">頂泰山巖</li>
+                            <li class="breadcrumb-item h5 mb-0">頂泰山巖</li>
                         </ol>
                         <p>
                             頂泰山巖建於清乾隆十九年（1754年），由仕紳李序彥、李序原等所捐建，
@@ -168,7 +171,7 @@
                 <li class="media bg-white rounded my-4 p-2 shadow">
                     <div class="media-body">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item mt-0 mb-1 h4">明志書院</li>
+                            <li class="breadcrumb-item h5 mb-0">明志書院</li>
                         </ol>
                         <p>
                             明志書院，為臺灣北部的書院，文風冠於北臺，號稱「北臺首學」。原為一所書院，1761年（清乾隆26年），來自福建汀州的貢生胡焯猷，捐設土地設於興直堡新莊的「山腳」，亦即今日新北市泰山區。隨著1781年淡水廳廳治在竹塹（今日臺灣新竹市），官紳們將明志書院遷建於竹塹，故分兩時期為「泰山明志書院」與「竹塹明志書院」（新竹明志書院）。竹塹明志書院原址[1]位於新竹關帝廟之西內天后宮以南（今日西大路與西門街交會點處），已在日治時期拆毀。
@@ -185,7 +188,7 @@
                     </a>
                     <div class="media-body">
                         <ol class="breadcrumb">
-                            <li class="breadcrumb-item mt-0 mb-1 h4">辭修公園</li>
+                            <li class="breadcrumb-item h5 mb-0">辭修公園</li>
                         </ol>
                         <p>
                             辭修公園，前名「陳誠紀念公園」，位於臺灣新北市泰山區同榮里尖凍山丘陵，佔地5.5公頃，原為中華民國故副總統陳誠與夫人譚祥的合葬墓園，1995年陳家後人將遺骨遷葬至高雄縣大樹鄉（今高雄市大樹區）佛光山萬壽園納骨塔[1]，該園交由泰山鄉公所管理，墓園經過改建更名為辭修公園。辭修公園整座公園設立在面向臺北盆地的山坡上，是林口臺地陡降丘陵的一部份[4]，由入口處向公園內部仰望，兩百多階的中央石階通往中央雕像平臺。平臺面向臺北盆地，視野廣闊，並立有紀念石碑，記述陳誠生平事蹟及蔣中正褒揚石碑[1]。
@@ -197,7 +200,7 @@
     </section>
     <!-- 莊園位置 section04 -->
     <section id="section04" class="vh-lg-100 bg-coffee1 pb-4">
-        <div class="container d-lg-flex flex-lg-column justify-content-lg-center">
+        <div class="container h-100 d-lg-flex flex-lg-column justify-content-lg-center">
             <h1 class="text-center text-white py-4">莊園位置</h1>
             <div class="embed-responsive embed-responsive-16by9">
                 <iframe class="embed-responsive-item"
@@ -208,15 +211,15 @@
     </section>
     <!-- 聯絡我們 section05 -->
     <section id="section05" class="vh-lg-100 bg-coffee2">
-        <div class="container">
-            <h1 class="text-center text-dark py-4">聯絡我們</h1>
+        <div class="container table-responsive">
+            <h1 class="text-center text-coffee1 py-4">聯絡我們</h1>
             <form class="needs-validation" novalidate>
                 <table class="table table-light table-hover table-striped">
                     <tr>
                         <td>
                             <div class="form-group">
-                                <label for="exampleInputEmail1">姓名</label>
-                                <input id="name" type="text" class="form-control" required>
+                                <label for="exampleFormControlInput1">姓名</label>
+                                <input id="name" type="input" class="form-control" required>
                                 <div class="invalid-feedback">
                                     請輸入姓名
                                 </div>
@@ -226,7 +229,7 @@
                     <tr>
                         <td>
                             <div class="form-group">
-                                <label for="telephone">電話號碼</label>
+                                <label for="exampleFormControlInput1">電話號碼</label>
                                 <input id="tel" type="tel" class="form-control" required>
                                 <div class="invalid-feedback">
                                     請輸入電話號碼
@@ -237,7 +240,7 @@
                     <tr>
                         <td>
                             <div class="form-group">
-                                <label for="email">電子郵件</label>
+                                <label for="exampleFormControlInput1">電子郵件</label>
                                 <input id="email" type="email" class="form-control" required>
                                 <div class="invalid-feedback">
                                     請輸入電子郵件
@@ -248,8 +251,8 @@
                     <tr>
                         <td>
                             <div class="form-group">
-                                <label for="message">留言訊息</label>
-                                <textarea id="message" type="email" rows="3" class="form-control"></textarea>
+                                <label for="exampleFormControlInput1">留言訊息</label>
+                                <textarea id="message" rows="3" class="form-control"></textarea>
                                 <div class="invalid-feedback">
                                     請輸入留言訊息
                                 </div>
@@ -267,12 +270,12 @@
         </div>
     </section>
     <!-- 咖啡故事 Modal -->
-    <div class="modal fade" id="myModal" tabindex="-1" role="dialog">
-        <div class="modal-dialog modal-dialog-centered modal-lg" role="document">
+    <div id="myModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="aboutCoffee">咖啡故事</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <h5 id="aboutCoffee" class="modal-title">咖啡故事</h5>
+                    <button type="button" class="close" data-dismiss="modal">
                         <span aria-hidden="true">&times;</span>
                     </button>
                 </div>
@@ -289,7 +292,8 @@
                                 <a class="nav-link disabled" href="#coffee3">咖啡壞處</a>
                             </li>
                         </ul>
-                        <ul class="col-12 list-unstyled row justify-content-lg-center overflow-auto" data-spy="scroll" data-target="#scrollspy" style="height:300px;">
+                        <ul class="col-12 list-unstyled row justify-content-lg-center overflow-auto" data-spy="scroll"
+                            data-target="#scrollspy" style="height:300px;">
                             <li id="coffee1" class="col-lg-10">
                                 <h2>咖啡起源</h2>
                                 <p>
@@ -336,6 +340,24 @@
             </div>
         </div>
     </div>
+    <!-- 頁尾 footer -->
+    <footer id="footer" class="bg-coffee1 text-white">
+        <div class="container-fluid">
+            <div class="row flex-column flex-lg-row">
+                <ul class="row flex-column flex-lg-row list-unstyled ml-3 mt-3 mr-auto">
+                    <li class="ml-lg-2"><i class="fas fa-map-marker-alt mr-2 align-middle"></i>新北市泰山區貴子里致遠新村55之1號</li>
+                    <li class="ml-lg-4"><i class="far fa-clock mr-2 align-middle"></i>營業時間：週一至週五 08:10~16:35，六、日
+                        08:10~16:35</li>
+                    <li class="ml-lg-4"><i class="fas fa-phone mr-2 align-middle"></i>電話：（02）2901-8274</li>
+                </ul>
+                <ul class="row flex-column flex-lg-row list-unstyled ml-3 mr-3 mt-3">
+                    <li>
+                        Copyright &copy; 2019 Jeffrey Yau
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -348,29 +370,7 @@
     <!-- magnific-popup js -->
     <script src="js/jquery.magnific-popup.min.js"></script>
     <script src="js/magnific-popup-single.js"></script>
-    <script>
-        // tooltip 啟動需要的程式碼
-        $('[data-toggle="tooltip"]').tooltip();
-
-        // Bootstrap驗證表單
-        (function () {
-            'use strict';
-            window.addEventListener('load', function () {
-                // Fetch all the forms we want to apply custom Bootstrap validation styles to
-                var forms = document.getElementsByClassName('needs-validation');
-                // Loop over them and prevent submission
-                var validation = Array.prototype.filter.call(forms, function (form) {
-                    form.addEventListener('submit', function (event) {
-                        if (form.checkValidity() === false) {
-                            event.preventDefault();
-                            event.stopPropagation();
-                        }
-                        form.classList.add('was-validated');
-                    }, false);
-                });
-            }, false);
-        })();
-    </script>
+    <script src="js/script.js"></script>
 </body>
 
 </html>
